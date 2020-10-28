@@ -29,7 +29,7 @@ function PostForm() {
     return (
         <div className="post-container">
             <h1 className="post_heading">Create Post</h1>
-            <form onSubmit={handleSubmit}>
+            <form className="form" onSubmit={handleSubmit}>
                 <input required type="text" placeholder="Enter Post Title" value={title} onChange={e=>setTitle(e.target.value)}/><br/>
                 <textarea required rows="5" cols="28" placeholder="Enter Post" value={message} onChange={e=>setMessage(e.target.value)}/><br/>
                 <button>Post</button>
